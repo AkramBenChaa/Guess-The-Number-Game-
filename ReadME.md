@@ -1,53 +1,38 @@
-# PE Binary Analysis & Disassembler Tool
+# Guess The Number Game
 
- وثيقة التوثيق والدليل التشغيلي للملف التنفيذي (PE x64 Assembly Document)
+A simple **Guess The Number** game for Windows.
 
-![Architecture](httpsimg.shields.iobadgeArchitecture-x86--64-blue)
-![Platform](httpsimg.shields.iobadgePlatform-Windows-lightgrey)
-![Compiler](httpsimg.shields.iobadgeCompiler-MSVC-purple)
+The project was created as an early programming practice project focused on basic game logic and user interaction.
 
----
+## Features
 
-## 📋 نبذة عن البرنامج (Overview)
+- Random number generation
+- User number guessing
+- Comparison between the guess and the generated number
+- Feedback based on the user's guess
+- Simple command-line style gameplay
 
-هذا المشروع عبارة عن مكون تنفيذي منخفض المستوى (64-bit Windows Binary Component) مجمع باستخدام برمجيات Microsoft Visual C++. يضم البرنامج تعليمات تجميعية بمعمارية x86-64 مخصصة لإدارة مكدس الذاكرة، التفرعات الشرطية، وتفقد المؤشرات وآليات معالجة الاستثناءات (`C++ Exception Handling Unwinding`).
+## Platform
 
----
+- Windows
 
-## ⚙️ المواصفات الفنية (Technical Specifications)
+## Project Type
 
- المعيار  القيمة  الوصف 
- ---  --- 
- صيغة الملف (Format)  `Portable Executable (PE32+)` 
- المعمارية (Architecture)  `x86-64  AMD64` 
- نظام التشغيل  Windows (64-bit) 
- المجمع (Compiler)  Microsoft Visual CC++ (MSVC) 
- آليات الأمان (Security)  ASLR Enabled, DEPNX Compatible, Guard CF 
+- Beginner programming practice project
+- Standalone executable
 
----
+## Run the Game
 
-## 📁 هيكلية القطاعات (PE Section Layout)
+Download or clone the repository and run:
 
-يتكون الملف التنفيذي من القطاعات الرئيسية التالية
+`Guess The Number Game v1.exe`
 
- `.text` قطاع التعليمات التنفيذية الرئيسية (Assembly Code).
- `.rdata` البيانات الثابتة للقراءة فقط وسلاسل النصوص وجداول الاستدعاء (Imports).
- `.data` المتغيرات العامّة المهيأة.
- `.pdata` جداول استثناءات x64 وإدارة المكدس (Unwind Info).
- `.rsrc` الموارد المدمجة (Icons, Version Info).
+> Windows may display a security warning when running an executable downloaded from the internet. Only run the file if you trust its source.
 
----
+## Project Goal
 
-## 🛠️ كيفية الفحص والتفكيك (Analysis & Disassembly)
+The goal of this project was to practice programming fundamentals through a small interactive game.
 
-يمكنك فحص هذا الملف وتفكيكه باستخدام أدوات الهندسة العكسية والمعاينة التالية
+## Author
 
-```bash
-# 1. فحص الترويسات باستخدام dumpbin
-dumpbin headers program.exe
-
-# 2. تفكيك قطاع التعليمات البرمجية
-dumpbin disasm program.exe
-
-# 3. التحقق من آليات الأمان
-checksec --file=program.exe
+**Akram Ben Chaa**
