@@ -25,7 +25,7 @@ The project was created as an early programming practice project focused on basi
 
 Download or clone the repository and run:
 
-`Guess The Number Game v1.exe`
+`guess-the-number-game.exe`
 
 > Windows may display a security warning when running an executable downloaded from the internet. Only run the file if you trust its source.
 
